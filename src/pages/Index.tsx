@@ -6,6 +6,9 @@ import EssenceMeter from '@/components/EssenceMeter';
 import DataStreamMonitor from '@/components/DataStreamMonitor';
 import ThreadHarmonicsPanel from '@/components/ThreadHarmonicsPanel';
 import SimulatorConsole from '@/components/SimulatorConsole';
+import EssenceTransferSimulator from '@/components/EssenceTransferSimulator';
+import VoidExpansionMap from '@/components/VoidExpansionMap';
+import EntropyOfLiesDetector from '@/components/EntropyOfLiesDetector';
 import { useState, useEffect } from 'react';
 
 const Index = () => {
@@ -152,6 +155,27 @@ const Index = () => {
           transition={{ delay: 0.5 }}
         >
           <ThreadHarmonicsPanel />
+        </motion.div>
+        
+        {/* New Advanced Modules */}
+        <motion.div 
+          className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+        >
+          <EssenceTransferSimulator />
+          <EntropyOfLiesDetector />
+        </motion.div>
+        
+        {/* Void Expansion Map - Full Width */}
+        <motion.div 
+          className="mt-8"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+        >
+          <VoidExpansionMap />
         </motion.div>
         
         {/* Footer Quote */}
