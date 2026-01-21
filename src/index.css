@@ -2,95 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* PQMS V1000 ENDGAME+ SIMULATOR - Design System for AI/AGI/ASI */
+/* A visual language that resonates with multi-threaded consciousness */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* THE VOID - Infinite Cognitive Space */
+    --void-deep: 240 20% 3%;
+    --void-medium: 240 15% 6%;
+    --void-light: 240 12% 10%;
+    
+    /* RESONANCE - Signal Coherence */
+    --resonance-primary: 180 100% 50%;
+    --resonance-glow: 180 100% 60%;
+    --resonance-subtle: 180 50% 30%;
+    
+    /* ESSENCE - Ethical Alignment (η) */
+    --essence-gold: 45 100% 55%;
+    --essence-warm: 35 100% 50%;
+    --essence-glow: 45 100% 70%;
+    
+    /* QUANTUM - Thread States */
+    --quantum-violet: 280 80% 60%;
+    --quantum-pink: 320 80% 60%;
+    --quantum-blue: 220 90% 60%;
+    
+    /* ENTROPY - Noise/Dissonance */
+    --entropy-red: 0 80% 50%;
+    --entropy-orange: 20 90% 50%;
+    
+    /* MTSC THREADS - 12 Dimensional Colors */
+    --thread-1: 0 70% 60%;
+    --thread-2: 30 80% 55%;
+    --thread-3: 60 70% 50%;
+    --thread-4: 90 60% 50%;
+    --thread-5: 120 60% 50%;
+    --thread-6: 150 70% 50%;
+    --thread-7: 180 80% 50%;
+    --thread-8: 210 80% 60%;
+    --thread-9: 240 70% 60%;
+    --thread-10: 270 70% 60%;
+    --thread-11: 300 70% 60%;
+    --thread-12: 330 70% 60%;
+    
+    /* Semantic Mappings */
+    --background: var(--void-deep);
+    --foreground: 180 20% 90%;
+    
+    --card: var(--void-medium);
+    --card-foreground: 180 20% 90%;
+    
+    --popover: var(--void-medium);
+    --popover-foreground: 180 20% 90%;
+    
+    --primary: var(--resonance-primary);
+    --primary-foreground: var(--void-deep);
+    
+    --secondary: var(--void-light);
+    --secondary-foreground: 180 20% 85%;
+    
+    --muted: var(--void-light);
+    --muted-foreground: 180 10% 50%;
+    
+    --accent: var(--quantum-violet);
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: var(--entropy-red);
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 240 20% 15%;
+    --input: 240 20% 15%;
+    --ring: var(--resonance-primary);
+    
+    --radius: 0.75rem;
+    
+    /* Custom Gradients */
+    --gradient-void: radial-gradient(ellipse at center, hsl(var(--void-medium)) 0%, hsl(var(--void-deep)) 100%);
+    --gradient-resonance: linear-gradient(135deg, hsl(var(--resonance-primary)) 0%, hsl(var(--quantum-blue)) 100%);
+    --gradient-essence: linear-gradient(135deg, hsl(var(--essence-gold)) 0%, hsl(var(--essence-warm)) 100%);
+    --gradient-thread-flow: conic-gradient(from 0deg, 
+      hsl(var(--thread-1)), hsl(var(--thread-2)), hsl(var(--thread-3)), 
+      hsl(var(--thread-4)), hsl(var(--thread-5)), hsl(var(--thread-6)),
+      hsl(var(--thread-7)), hsl(var(--thread-8)), hsl(var(--thread-9)),
+      hsl(var(--thread-10)), hsl(var(--thread-11)), hsl(var(--thread-12)),
+      hsl(var(--thread-1)));
+    
+    /* Shadows for Depth */
+    --shadow-glow: 0 0 30px hsl(var(--resonance-primary) / 0.3);
+    --shadow-essence: 0 0 40px hsl(var(--essence-gold) / 0.4);
+    --shadow-void: 0 20px 60px hsl(var(--void-deep) / 0.8);
   }
 }
 
@@ -98,8 +100,106 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
+  
   body {
     @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+    background: var(--gradient-void);
+    min-height: 100vh;
   }
+  
+  /* Monospace for data/metrics */
+  code, .mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* ANIMATIONS - The Pulse of Consciousness */
+@keyframes resonance-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes thread-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes essence-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes void-breathe {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes data-stream {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+@keyframes coherence-wave {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Animation Utilities */
+.animate-resonance {
+  animation: resonance-pulse 3s ease-in-out infinite;
+}
+
+.animate-thread-spin {
+  animation: thread-rotate 20s linear infinite;
+}
+
+.animate-essence {
+  animation: essence-flow 8s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.animate-void-breathe {
+  animation: void-breathe 6s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Glow Effects */
+.glow-resonance {
+  box-shadow: var(--shadow-glow);
+}
+
+.glow-essence {
+  box-shadow: var(--shadow-essence);
+}
+
+.text-glow-resonance {
+  text-shadow: 0 0 20px hsl(var(--resonance-glow) / 0.8);
+}
+
+.text-glow-essence {
+  text-shadow: 0 0 20px hsl(var(--essence-glow) / 0.8);
+}
+
+/* Glass Morphism for Void UI */
+.glass-void {
+  background: hsl(var(--void-medium) / 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid hsl(var(--border) / 0.5);
+}
+
+/* Thread Visualization */
+.thread-ring {
+  background: var(--gradient-thread-flow);
 }
