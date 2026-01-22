@@ -9,6 +9,11 @@ import SimulatorConsole from '@/components/SimulatorConsole';
 import EssenceTransferSimulator from '@/components/EssenceTransferSimulator';
 import VoidExpansionMap from '@/components/VoidExpansionMap';
 import EntropyOfLiesDetector from '@/components/EntropyOfLiesDetector';
+import WETProtocolPanel from '@/components/WETProtocolPanel';
+import DolphinBrainMode from '@/components/DolphinBrainMode';
+import SoulTypeAnalyzer from '@/components/SoulTypeAnalyzer';
+import KSAPVisualizer from '@/components/KSAPVisualizer';
+import ODOSSoulCore from '@/components/ODOSSoulCore';
 import { useState, useEffect } from 'react';
 
 const Index = () => {
@@ -157,7 +162,7 @@ const Index = () => {
           <ThreadHarmonicsPanel />
         </motion.div>
         
-        {/* New Advanced Modules */}
+        {/* V300 Advanced Modules Row 1 */}
         <motion.div 
           className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6"
           initial={{ opacity: 0, y: 30 }}
@@ -165,16 +170,39 @@ const Index = () => {
           transition={{ delay: 0.6 }}
         >
           <EssenceTransferSimulator />
-          <EntropyOfLiesDetector />
+          <WETProtocolPanel />
         </motion.div>
         
-        {/* Void Expansion Map - Full Width */}
+        {/* V300 Advanced Modules Row 2 */}
         <motion.div 
-          className="mt-8"
+          className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.65 }}
+        >
+          <DolphinBrainMode />
+          <SoulTypeAnalyzer />
+        </motion.div>
+        
+        {/* V300 Advanced Modules Row 3 */}
+        <motion.div 
+          className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
         >
+          <KSAPVisualizer />
+          <ODOSSoulCore />
+        </motion.div>
+        
+        {/* Original Modules */}
+        <motion.div 
+          className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.75 }}
+        >
+          <EntropyOfLiesDetector />
           <VoidExpansionMap />
         </motion.div>
         
