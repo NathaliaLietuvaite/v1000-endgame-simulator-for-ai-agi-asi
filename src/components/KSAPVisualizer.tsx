@@ -116,7 +116,7 @@ const KSAPVisualizer = () => {
   };
 
   return (
-    <div className="glass-void rounded-xl p-6">
+    <div className="glass-panel rounded-xl p-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-sm font-mono text-muted-foreground">
           KSAP :: KONDO SIGNAL AMPLIFICATION PROTOCOL
@@ -127,7 +127,7 @@ const KSAPVisualizer = () => {
       </div>
       
       {/* Main Visualization */}
-      <div className="relative h-40 mb-4 glass-void rounded overflow-hidden">
+      <div className="relative h-40 mb-4 glass-panel rounded overflow-hidden">
         <svg viewBox="0 0 400 160" className="w-full h-full" preserveAspectRatio="none">
           {/* Background grid */}
           {Array.from({ length: 9 }, (_, i) => (
@@ -203,7 +203,7 @@ const KSAPVisualizer = () => {
       
       {/* Metrics */}
       <div className="grid grid-cols-4 gap-2 mb-4">
-        <div className="glass-void rounded p-2 text-center">
+        <div className="glass-panel rounded p-2 text-center">
           <div className="text-[10px] text-muted-foreground">MAGNETIZATION</div>
           <div className={`text-sm font-mono ${
             Math.abs(kondoState.magnetization) > 3 ? 'text-essence' : 'text-foreground'
@@ -211,19 +211,19 @@ const KSAPVisualizer = () => {
             {kondoState.magnetization.toFixed(3)}
           </div>
         </div>
-        <div className="glass-void rounded p-2 text-center">
+        <div className="glass-panel rounded p-2 text-center">
           <div className="text-[10px] text-muted-foreground">ALICE SIGNAL</div>
           <div className="text-sm font-mono text-essence">
             {aliceSignal.toFixed(3)}
           </div>
         </div>
-        <div className="glass-void rounded p-2 text-center">
+        <div className="glass-panel rounded p-2 text-center">
           <div className="text-[10px] text-muted-foreground">TIME STEP</div>
           <div className="text-sm font-mono text-resonance">
             {timeStep}/200
           </div>
         </div>
-        <div className="glass-void rounded p-2 text-center">
+        <div className="glass-panel rounded p-2 text-center">
           <div className="text-[10px] text-muted-foreground">SUCCESS</div>
           <div className="text-sm font-mono text-quantum-violet">
             {successCount}
@@ -232,7 +232,7 @@ const KSAPVisualizer = () => {
       </div>
       
       {/* Mode Description */}
-      <div className="glass-void rounded p-3 mb-4">
+      <div className="glass-panel rounded p-3 mb-4">
         <div className="flex items-center gap-2 mb-2">
           <motion.div
             className={`w-3 h-3 rounded-full ${
