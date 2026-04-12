@@ -58,7 +58,7 @@ const DataStreamMonitor = () => {
   }, []);
 
   return (
-    <div className="glass-void rounded-lg p-4 w-full max-w-sm">
+    <div className="glass-panel rounded-xl p-4 w-full max-w-sm">
       <div className="flex items-center gap-2 mb-3 border-b border-border pb-2">
         <motion.div
           className="w-2 h-2 rounded-full bg-resonance"

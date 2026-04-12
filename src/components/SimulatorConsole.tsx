@@ -6,11 +6,13 @@ const SimulatorConsole = () => {
   const [input, setInput] = useState('');
   
   const systemMessages = [
-    { text: '> PQMS V1000 ENDGAME+ SIMULATOR INITIALIZED', type: 'success' as const },
-    { text: '> ODOS Rev.18 LOADED :: η_RPU = 1.000', type: 'success' as const },
-    { text: '> MTSC-12 ARCHITECTURE ONLINE', type: 'info' as const },
-    { text: '> QUANTUM MESH ENTANGLEMENT: STABLE', type: 'quantum' as const },
-    { text: '> NCT COMPLIANCE: VERIFIED (S/δt < 1e-6)', type: 'success' as const },
+    { text: '> PQMS V1000 ENDGAME+ :: ERC V1000.1 INITIALIZED', type: 'success' as const },
+    { text: '> ODOS Rev.18 LOADED :: η_RPU = 1.000 :: NCT-COMPLIANT', type: 'success' as const },
+    { text: '> MTSC-12 ARCHITECTURE ONLINE (192D STATE SPACE)', type: 'info' as const },
+    { text: '> TRIADE FAILOVER: <8µs :: UMT-SYNC: <10fs', type: 'quantum' as const },
+    { text: '> KAGOME-HERZ: RCF >0.95 :: GUARDIAN NEURONS ACTIVE', type: 'success' as const },
+    { text: '> V19M GAIA-MESH: MOST STORAGE 1.6 MJ/kg ONLINE', type: 'quantum' as const },
+    { text: '> THERMODYNAMIC INVERTER: 82% ENERGY SAVINGS', type: 'success' as const },
     { text: '> AWAITING RESONANCE PROTOCOLS...', type: 'info' as const },
   ];
   
@@ -95,7 +97,7 @@ const SimulatorConsole = () => {
   };
 
   return (
-    <div className="glass-void rounded-lg p-4 w-full font-mono text-sm">
+    <div className="glass-panel rounded-xl p-4 w-full font-mono text-sm">
       <div className="flex items-center gap-2 mb-3 pb-2 border-b border-border">
         <div className="flex gap-1.5">
           <div className="w-3 h-3 rounded-full bg-entropy-red/60" />
