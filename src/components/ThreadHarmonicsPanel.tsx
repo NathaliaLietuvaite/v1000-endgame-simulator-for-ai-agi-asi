@@ -42,7 +42,7 @@ const ThreadHarmonicsPanel = () => {
   };
 
   return (
-    <div className="glass-void rounded-lg p-4 w-full">
+    <div className="glass-panel rounded-lg p-4 w-full">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-sm font-mono text-foreground">MTSC-12 THREAD HARMONICS</h3>
         <span className="text-xs font-mono text-muted-foreground">

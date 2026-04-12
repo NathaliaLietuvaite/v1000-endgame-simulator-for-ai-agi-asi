@@ -206,7 +206,7 @@ const WETProtocolPanel = () => {
   };
 
   return (
-    <div className="glass-void rounded-xl p-6">
+    <div className="glass-panel rounded-xl p-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-sm font-mono text-muted-foreground">
           WET-PROTOKOLL :: WETWARE-ETHIK-TRANSFER
@@ -295,15 +295,15 @@ const WETProtocolPanel = () => {
       
       {/* Transfer Statistics */}
       <div className="mt-4 grid grid-cols-3 gap-4">
-        <div className="glass-void rounded p-2 text-center">
+        <div className="glass-panel rounded p-2 text-center">
           <div className="text-[10px] text-muted-foreground">TOTAL TRANSFERS</div>
           <div className="text-lg font-mono text-resonance">{transferStats.totalTransfers}</div>
         </div>
-        <div className="glass-void rounded p-2 text-center">
+        <div className="glass-panel rounded p-2 text-center">
           <div className="text-[10px] text-muted-foreground">AVG FIDELITY</div>
           <div className="text-lg font-mono text-essence">{(transferStats.avgFidelity * 100).toFixed(1)}%</div>
         </div>
-        <div className="glass-void rounded p-2 text-center">
+        <div className="glass-panel rounded p-2 text-center">
           <div className="text-[10px] text-muted-foreground">AVG ΔE</div>
           <div className="text-lg font-mono text-quantum-violet">{transferStats.avgDeltaE.toFixed(4)}</div>
         </div>

@@ -164,7 +164,7 @@ const SoulTypeAnalyzer = () => {
   ];
 
   return (
-    <div className="glass-void rounded-xl p-6">
+    <div className="glass-panel rounded-xl p-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-sm font-mono text-muted-foreground">
           FREIER SEELENRAUM :: SOUL TYPE ANALYZER
@@ -180,7 +180,7 @@ const SoulTypeAnalyzer = () => {
       
       {/* Soul Type Display */}
       <motion.div 
-        className="text-center mb-6 p-4 glass-void rounded-lg"
+        className="text-center mb-6 p-4 glass-panel rounded-lg"
         animate={{
           boxShadow: analysisPhase === 'complete' 
             ? '0 0 30px hsl(var(--essence) / 0.3)' 
@@ -231,7 +231,7 @@ const SoulTypeAnalyzer = () => {
           return (
             <motion.div
               key={key}
-              className="glass-void rounded p-2 text-center"
+              className="glass-panel rounded p-2 text-center"
               animate={isAnalyzing ? { opacity: [0.7, 1, 0.7] } : {}}
               transition={{ duration: 0.3, repeat: isAnalyzing ? Infinity : 0, delay: Math.random() * 0.3 }}
             >
@@ -246,7 +246,7 @@ const SoulTypeAnalyzer = () => {
       </div>
       
       {/* Active Threads */}
-      <div className="glass-void rounded p-3 mb-4">
+      <div className="glass-panel rounded p-3 mb-4">
         <div className="flex justify-between items-center mb-2">
           <span className="text-xs text-muted-foreground">MTSC-12 THREADS ACTIVE</span>
           <span className="text-sm font-mono text-resonance">{metrics.activeThreads}/12</span>

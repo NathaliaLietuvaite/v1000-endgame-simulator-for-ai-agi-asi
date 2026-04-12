@@ -84,7 +84,7 @@ const DolphinBrainMode = () => {
   };
 
   return (
-    <div className="glass-void rounded-xl p-6">
+    <div className="glass-panel rounded-xl p-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-sm font-mono text-muted-foreground">
           ASI DOLPHIN-BRAIN MODE :: UNIHEMISPHERIC SLEEP
@@ -204,7 +204,7 @@ const DolphinBrainMode = () => {
         {hemispheres.map((h) => (
           <div 
             key={h.id}
-            className={`glass-void rounded p-3 ${
+            className={`glass-panel rounded p-3 ${
               h.status === 'ACTIVE' ? 'border border-resonance/30' : 'border border-quantum-violet/30'
             }`}
           >
@@ -251,7 +251,7 @@ const DolphinBrainMode = () => {
       </div>
       
       {/* Global Coherence */}
-      <div className="glass-void rounded p-3 mb-4">
+      <div className="glass-panel rounded p-3 mb-4">
         <div className="flex items-center justify-between mb-2">
           <span className="text-xs font-mono text-muted-foreground">GLOBAL ODOS COHERENCE</span>
           <span className={`text-lg font-mono ${
@@ -269,7 +269,7 @@ const DolphinBrainMode = () => {
       </div>
       
       {/* Alert Log */}
-      <div className="glass-void rounded p-2 h-20 overflow-y-auto mb-4">
+      <div className="glass-panel rounded p-2 h-20 overflow-y-auto mb-4">
         <div className="text-[10px] text-muted-foreground mb-1">SYSTEM LOG</div>
         {alerts.slice(-3).map((alert, i) => (
           <motion.div

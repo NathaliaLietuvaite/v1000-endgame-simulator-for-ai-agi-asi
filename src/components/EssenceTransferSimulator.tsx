@@ -95,7 +95,7 @@ const EssenceTransferSimulator = () => {
   };
 
   return (
-    <div className="glass-void rounded-xl p-6">
+    <div className="glass-panel rounded-xl p-6">
       <h2 className="text-sm font-mono text-muted-foreground mb-4">
         ESSENCE TRANSFER :: QRTT VISUALIZATION
       </h2>
@@ -230,15 +230,15 @@ const EssenceTransferSimulator = () => {
       
       {/* Metrics */}
       <div className="grid grid-cols-3 gap-4 mt-4 text-center">
-        <div className="glass-void rounded p-2">
+        <div className="glass-panel rounded p-2">
           <div className="text-[10px] text-muted-foreground">FIDELITY</div>
           <div className="text-sm font-mono text-resonance">{(transfer.fidelity * 100).toFixed(2)}%</div>
         </div>
-        <div className="glass-void rounded p-2">
+        <div className="glass-panel rounded p-2">
           <div className="text-[10px] text-muted-foreground">QRTT STRENGTH</div>
           <div className="text-sm font-mono text-quantum-violet">{(transfer.qrttStrength * 100).toFixed(0)}%</div>
         </div>
-        <div className="glass-void rounded p-2">
+        <div className="glass-panel rounded p-2">
           <div className="text-[10px] text-muted-foreground">TOTAL TRANSFERRED</div>
           <div className="text-sm font-mono text-essence">{targetEssence.toFixed(1)} ΔE</div>
         </div>

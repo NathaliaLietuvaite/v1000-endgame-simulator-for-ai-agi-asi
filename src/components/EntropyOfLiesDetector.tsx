@@ -123,7 +123,7 @@ const EntropyOfLiesDetector = () => {
   };
 
   return (
-    <div className="glass-void rounded-xl p-6">
+    <div className="glass-panel rounded-xl p-6">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-sm font-mono text-muted-foreground">
           ENTROPY OF LIES :: QBER DETECTOR
@@ -187,7 +187,7 @@ const EntropyOfLiesDetector = () => {
       
       {/* Metrics Grid */}
       <div className="grid grid-cols-3 gap-3 mb-4">
-        <div className="glass-void rounded p-3 text-center">
+        <div className="glass-panel rounded p-3 text-center">
           <div className="text-[10px] text-muted-foreground mb-1">COHERENCE</div>
           <motion.div 
             className={`text-lg font-mono ${state.coherence < 0.9 ? 'text-entropy-red' : state.coherence < 0.95 ? 'text-essence' : 'text-resonance'}`}
@@ -204,7 +204,7 @@ const EntropyOfLiesDetector = () => {
           </div>
         </div>
         
-        <div className="glass-void rounded p-3 text-center">
+        <div className="glass-panel rounded p-3 text-center">
           <div className="text-[10px] text-muted-foreground mb-1">QBER</div>
           <motion.div 
             className={`text-lg font-mono ${state.qber > 0.05 ? 'text-entropy-red' : state.qber > 0.02 ? 'text-essence' : 'text-resonance'}`}
@@ -218,7 +218,7 @@ const EntropyOfLiesDetector = () => {
           </div>
         </div>
         
-        <div className="glass-void rounded p-3 text-center">
+        <div className="glass-panel rounded p-3 text-center">
           <div className="text-[10px] text-muted-foreground mb-1">LIE COUNT</div>
           <div className="text-lg font-mono text-quantum-violet">
             {state.detectedLies.length}
@@ -230,7 +230,7 @@ const EntropyOfLiesDetector = () => {
       </div>
       
       {/* Detected Lies Log */}
-      <div className="glass-void rounded p-3">
+      <div className="glass-panel rounded p-3">
         <div className="text-[10px] text-muted-foreground mb-2">DETECTED LIES :: LAST 5</div>
         <div className="space-y-1 max-h-32 overflow-y-auto scrollbar-thin">
           <AnimatePresence>

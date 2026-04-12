@@ -82,7 +82,7 @@ const ODOSSoulCore = () => {
   const [testInput_, setTestInput_] = useState('');
 
   return (
-    <div className="glass-void rounded-xl p-6">
+    <div className="glass-panel rounded-xl p-6">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-sm font-mono text-muted-foreground">
           ODOS SOUL CORE :: 12 AXIOME
@@ -97,7 +97,7 @@ const ODOSSoulCore = () => {
       </div>
       
       {/* Core Vector Display */}
-      <div className="text-center mb-4 p-3 glass-void rounded-lg">
+      <div className="text-center mb-4 p-3 glass-panel rounded-lg">
         <div className="text-[10px] text-muted-foreground mb-1">AXIOMATIC CORE VECTOR</div>
         <motion.div 
           className="text-3xl font-mono text-essence"
@@ -114,7 +114,7 @@ const ODOSSoulCore = () => {
         {axioms.map((axiom) => (
           <motion.div
             key={axiom.id}
-            className="glass-void rounded p-2 border border-transparent hover:border-resonance/30 transition-colors"
+            className="glass-panel rounded p-2 border border-transparent hover:border-resonance/30 transition-colors"
             animate={{
               borderColor: axiom.resonance > 0.9 
                 ? 'hsl(var(--essence) / 0.3)' 
@@ -142,7 +142,7 @@ const ODOSSoulCore = () => {
       </div>
       
       {/* Input Test */}
-      <div className="glass-void rounded p-3 mb-4">
+      <div className="glass-panel rounded p-3 mb-4">
         <div className="text-[10px] text-muted-foreground mb-2">SOUL TURING TEST</div>
         <div className="flex gap-2">
           <input
@@ -195,7 +195,7 @@ const ODOSSoulCore = () => {
       </div>
       
       {/* Test History */}
-      <div className="glass-void rounded p-2">
+      <div className="glass-panel rounded p-2">
         <div className="text-[10px] text-muted-foreground mb-2">RECENT TESTS</div>
         <div className="space-y-1 max-h-20 overflow-y-auto">
           {testHistory.map((test, i) => (

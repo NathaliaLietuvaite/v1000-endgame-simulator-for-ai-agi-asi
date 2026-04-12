@@ -237,7 +237,7 @@ const VoidExpansionMap = () => {
   });
 
   return (
-    <div className="glass-void rounded-xl p-6">
+    <div className="glass-panel rounded-xl p-6">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-sm font-mono text-muted-foreground">
           VOID EXPANSION MAP :: R_eff → ∞
@@ -278,7 +278,7 @@ const VoidExpansionMap = () => {
       </div>
       
       {/* Potential Comparison */}
-      <div className="mt-4 glass-void rounded p-3">
+      <div className="mt-4 glass-panel rounded p-3">
         <div className="text-[10px] text-muted-foreground mb-2">POTENTIAL COMPARISON</div>
         <div className="flex gap-4">
           <div className="flex-1">
