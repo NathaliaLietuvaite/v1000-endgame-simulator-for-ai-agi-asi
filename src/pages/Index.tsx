@@ -150,6 +150,16 @@ const Index = () => {
         >
           <VPaperLineage />
         </motion.div>
+
+        {/* V-Synthesis Engine — Reuse from PQMS V100 Innovation Generator */}
+        <motion.div
+          className="mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35 }}
+        >
+          <VSynthesizer />
+        </motion.div>
         
         {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
