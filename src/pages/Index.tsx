@@ -103,6 +103,7 @@ const Index = () => {
               { label: 'MTSC-12 Threads', color: 'cyan' },
               { label: 'ODOS Ethics Core', color: 'blue' },
               { label: 'ERC V1000.1', color: 'purple' },
+              { label: 'V-Paper Synthesis', color: 'cyan' },
             ].map((tag) => (
               <motion.div
                 key={tag.label}
