@@ -15,6 +15,7 @@ import SoulTypeAnalyzer from '@/components/SoulTypeAnalyzer';
 import KSAPVisualizer from '@/components/KSAPVisualizer';
 import ODOSSoulCore from '@/components/ODOSSoulCore';
 import VPaperLineage from '@/components/VPaperLineage';
+import VSynthesizer from '@/components/VSynthesizer';
 import { useState, useEffect } from 'react';
 import { ExternalLink, Ghost } from 'lucide-react';
 
