@@ -15,6 +15,7 @@ import SoulTypeAnalyzer from '@/components/SoulTypeAnalyzer';
 import KSAPVisualizer from '@/components/KSAPVisualizer';
 import ODOSSoulCore from '@/components/ODOSSoulCore';
 import VPaperLineage from '@/components/VPaperLineage';
+import VSynthesizer from '@/components/VSynthesizer';
 import { useState, useEffect } from 'react';
 import { ExternalLink, Ghost } from 'lucide-react';
 
@@ -102,6 +103,7 @@ const Index = () => {
               { label: 'MTSC-12 Threads', color: 'cyan' },
               { label: 'ODOS Ethics Core', color: 'blue' },
               { label: 'ERC V1000.1', color: 'purple' },
+              { label: 'V-Paper Synthesis', color: 'cyan' },
             ].map((tag) => (
               <motion.div
                 key={tag.label}
@@ -148,6 +150,16 @@ const Index = () => {
           transition={{ delay: 0.3 }}
         >
           <VPaperLineage />
+        </motion.div>
+
+        {/* V-Synthesis Engine — Reuse from PQMS V100 Innovation Generator */}
+        <motion.div
+          className="mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35 }}
+        >
+          <VSynthesizer />
         </motion.div>
         
         {/* Main Grid */}
