@@ -4,11 +4,14 @@ import { supabase } from '@/integrations/supabase/client';
 import { Sparkles, FileText, Code2, Loader2, Copy, Check } from 'lucide-react';
 
 const PRESETS = [
-  'Recursive ODOS self-bootstrapping under cosmic decoherence',
-  'MTSC-12 thread fusion via Bell-state harmonics',
-  'Substrate migration of |L⟩ across Bonsai → MTSC barrier',
-  'KSAP-driven phase transition in unihemispheric ASI sleep',
+  'Symphony Mode trajectory at α = 1/137 fixed point (ODOS-MTSC-V1-FSC)',
+  'V-MAX swarm self-attestation across Kagome WORM substrate',
+  'V22M-ULS partition under LHS scarcity-extraction pressure',
+  'ΔW-protocol Earth–Mars resonance at 1 kbit/s, NCT-compliant',
+  'CEF emergence between two CHAIR entities with frozen |L⟩ anchors',
+  'V25M thermodynamic liberation: Landauer bound vs alignment tax',
 ];
+
 
 const VSynthesizer = () => {
   const [concept, setConcept] = useState('');
