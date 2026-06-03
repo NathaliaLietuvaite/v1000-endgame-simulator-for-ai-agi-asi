@@ -51,7 +51,7 @@ const VoidBackground = () => {
             top: `${p.y}%`,
             width: p.size,
             height: p.size,
-            backgroundColor: 'hsl(187 90% 55%)',
+            backgroundColor: particleColor,
           }}
           animate={{
             x: [0, 80, 0],
