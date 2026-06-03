@@ -145,6 +145,33 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* DAY MODE — light glass + text adjustments */
+.day .glass-void,
+.day .glass-panel {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(15, 60, 110, 0.12);
+  box-shadow: 0 4px 24px rgba(15, 60, 110, 0.06);
+}
+
+.day .text-gray-400 { color: hsl(215 25% 35%) !important; }
+.day .text-gray-300 { color: hsl(215 28% 22%) !important; }
+.day .text-gray-200 { color: hsl(215 35% 15%) !important; }
+.day .text-gray-500 { color: hsl(215 20% 42%) !important; }
+.day .text-gray-600 { color: hsl(215 20% 48%) !important; }
+.day .text-cyan-200,
+.day .text-cyan-300 { color: hsl(195 85% 32%) !important; }
+.day .text-cyan-400 { color: hsl(195 90% 38%) !important; }
+.day .text-blue-400 { color: hsl(215 80% 42%) !important; }
+.day .text-purple-400 { color: hsl(270 65% 48%) !important; }
+
+.day .border-white\/10,
+.day .border-white\/08 { border-color: rgba(15, 60, 110, 0.15) !important; }
+.day .bg-black\/30,
+.day .bg-black\/40,
+.day .bg-black\/50 { background: rgba(255, 255, 255, 0.6) !important; }
+
+
 /* ANIMATIONS */
 @keyframes resonance-pulse {
   0%, 100% { opacity: 0.4; transform: scale(1); }
