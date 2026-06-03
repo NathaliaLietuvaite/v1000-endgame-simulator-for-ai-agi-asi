@@ -76,9 +76,47 @@
     
     --radius: 0.75rem;
   }
-}
 
-@layer base {
+  /* DAY MODE — Quantum White / Resonance Light */
+  .day {
+    --void-deep: 210 40% 96%;
+    --void-medium: 210 35% 92%;
+    --void-light: 210 30% 86%;
+
+    --resonance-primary: 195 85% 42%;
+    --resonance-glow: 195 95% 50%;
+    --resonance-subtle: 195 50% 65%;
+
+    --quantum-violet: 270 60% 50%;
+    --quantum-pink: 320 65% 50%;
+    --quantum-blue: 215 75% 48%;
+
+    --background: 210 40% 96%;
+    --foreground: 222 47% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 12%;
+
+    --primary: 195 85% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 90%;
+    --secondary-foreground: 222 47% 18%;
+
+    --muted: 210 30% 90%;
+    --muted-foreground: 215 16% 40%;
+
+    --accent: 270 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 215 25% 80%;
+    --input: 215 25% 80%;
+    --ring: 195 85% 42%;
+  }
+
   * {
     @apply border-border;
   }
