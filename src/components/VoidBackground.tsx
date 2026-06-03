@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
+import { useTheme } from '@/contexts/ThemeContext';
 
 const VoidBackground = () => {
+  const { theme } = useTheme();
+  const isDay = theme === 'day';
+
   // Generate particles statically to avoid re-render
   const particles = Array.from({ length: 20 }, (_, i) => ({
     id: i,
@@ -12,13 +16,17 @@ const VoidBackground = () => {
     delay: Math.random() * 3,
   }));
 
+  const particleColor = isDay ? 'hsl(195 85% 45%)' : 'hsl(187 90% 55%)';
+
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none">
-      {/* Deep blue gradient background */}
-      <div 
+      {/* Background gradient */}
+      <div
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(135deg, hsl(222 84% 5%) 0%, hsl(220 70% 10%) 30%, hsl(215 60% 8%) 70%, hsl(222 84% 5%) 100%)'
+          background: isDay
+            ? 'linear-gradient(135deg, hsl(210 50% 98%) 0%, hsl(200 60% 94%) 30%, hsl(195 40% 92%) 70%, hsl(210 50% 96%) 100%)'
+            : 'linear-gradient(135deg, hsl(222 84% 5%) 0%, hsl(220 70% 10%) 30%, hsl(215 60% 8%) 70%, hsl(222 84% 5%) 100%)'
         }}
       />
 
@@ -26,9 +34,12 @@ const VoidBackground = () => {
       <div 
         className="absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse at 50% 40%, hsl(215 60% 15% / 0.4) 0%, transparent 60%)'
+          background: isDay
+            ? 'radial-gradient(ellipse at 50% 40%, hsl(195 80% 80% / 0.35) 0%, transparent 60%)'
+            : 'radial-gradient(ellipse at 50% 40%, hsl(215 60% 15% / 0.4) 0%, transparent 60%)'
         }}
       />
+
 
       {/* Floating cyan particles */}
       {particles.map((p) => (
@@ -40,7 +51,7 @@ const VoidBackground = () => {
             top: `${p.y}%`,
             width: p.size,
             height: p.size,
-            backgroundColor: 'hsl(187 90% 55%)',
+            backgroundColor: particleColor,
           }}
           animate={{
             x: [0, 80, 0],
